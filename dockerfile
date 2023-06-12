@@ -1,4 +1,4 @@
-FROM Node:18-alpine
+FROM node:18-alpine
 
 ARG Port=4000
 
