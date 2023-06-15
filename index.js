@@ -8,9 +8,9 @@ app.get("/", (req, res)=>{
 
 app.get("/calc", (req, res)=>{
     console.log(Date() + req.ip + " ==> " + req.headers.host + req.path);
-    try{
+    // try{
         r = v + 0;
-    }
+    // }
     // catch(err){
     //     res.send("<h1>Error</h1>");
     // }
