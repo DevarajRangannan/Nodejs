@@ -1,4 +1,6 @@
 const express = require("express");
+require('dotenv').config();
+
 const app = express();
 
 app.get("/", (req, res)=>{
@@ -8,13 +10,10 @@ app.get("/", (req, res)=>{
 
 app.get("/calc", (req, res)=>{
     console.log(Date() + req.ip + " ==> " + req.headers.host + req.path);
-    // try{
-        r = v + 0;
-    // }
-    // catch(err){
-    //     res.send("<h1>Error</h1>");
-    // }
+    res.send(process.env.NUMBER)
     
 })
 
 app.listen(4000, ()=>{console.log("Server Start");})
+
+console.log(process.env.NAME);
