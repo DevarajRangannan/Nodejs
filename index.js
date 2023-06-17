@@ -26,6 +26,18 @@ app.get("/sub", (req, res)=>{
     
 })
 
+app.get("/Div", (req, res)=>{
+    console.log(Date() + req.ip + " ==> " + req.headers.host + req.path);
+    res.send("Div 1/1")
+
+})
+
+app.get("/featur1", (req, res)=>{
+    console.log(Date() + req.ip + " ==> " + req.headers.host + req.path);
+    res.send("Feature 1")
+
+})
+
 
 app.listen(4000, ()=>{console.log("Server Start");})
 
