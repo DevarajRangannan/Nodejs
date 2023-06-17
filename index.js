@@ -38,7 +38,11 @@ app.get("/featur1", (req, res)=>{
 
 })
 
+app.get("/f2", (req, res)=>{
+    console.log(Date() + req.ip + " ==> " + req.headers.host + req.path);
+    res.send("Feature 2")
 
+})
 app.listen(4000, ()=>{console.log("Server Start");})
 
 console.log(process.env.NAME);
