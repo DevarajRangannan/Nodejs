@@ -15,10 +15,12 @@ spec:
     spec:
       containers:
       - name: portfolio-backend
-        image: devarangan/portfolio-backend
-        envFrom:
-        - secretRef:
-            name: my-secret
+        image: devarangan/nodejs
+        env:
+            - name: MONGO_HOST
+              value: mongodb
+            - name: MONGO_PORT
+              value: "27017"
         ports:
         - containerPort: 3000
 ---
