@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: node
-        image: devarangan:1.0
+        image: devarangan/nodejs:1.0
       ports:
       - containerPort: 4000
 ---
