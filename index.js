@@ -44,7 +44,7 @@ app.get("/featur1", (req, res)=>{
 })
 
 app.get("/wx", (req, res)=>{
-    console.log(res);
+    console.log(req);
     console.log("=======********======");
     console.log("=======********======");
     console.log("=======********======");
