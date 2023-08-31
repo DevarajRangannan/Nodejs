@@ -9,7 +9,7 @@ const app = express();
 
 
 app.get("/", (req, res)=>{
-    console.log("hiiii");
+    // console.log("hiiii");
     res.send("Hello World");
 })
 
@@ -45,9 +45,9 @@ app.get("/featur1", (req, res)=>{
 
 app.get("/wx", (req, res)=>{
     console.log(res);
-    res.send("=======********======")
-    res.send("=======********======")
-    res.send("=======********======")
+    console.log("=======********======");
+    console.log("=======********======");
+    console.log("=======********======");
     console.log(res);
     res.send("webhook")
 
@@ -67,6 +67,6 @@ app.get("/db", (req, res)=>{
 })
 
 
-app.listen(4000, ()=>{console.log("Server Start");})
+app.listen(4000, ()=>{console.log("Server Start")})
 
 console.log(process.env.NAME);
