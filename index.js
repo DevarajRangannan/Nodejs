@@ -43,7 +43,12 @@ app.get("/featur1", (req, res)=>{
 
 })
 
-app.get("/webhook", (req, res)=>{
+app.get("/wx", (req, res)=>{
+    console.log(res);
+    res.send("=======********======")
+    res.send("=======********======")
+    res.send("=======********======")
+    console.log(res);
     res.send("webhook")
 
 })
